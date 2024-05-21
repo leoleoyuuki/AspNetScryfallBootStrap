@@ -1,0 +1,39 @@
+﻿@model Scryfall;
+@{
+    ViewData["Title"] = "Scryfall";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<div class="card" style="width: 61rem;">
+    <div class="row no-gutters">
+        <div class="col-md-5">
+            <img class="card-img-top" src=@Model.Image alt="Card image cap" style="width: 340px;">
+        </div>
+        <div class="col-md-7">
+            <div class="card-body">
+                <h5 class="card-title">
+                    @Model.Name
+                </h5>
+                <hr>
+                <h5 class="card-subtitle">
+                   @Model.Type
+                </h5>
+                <p class="card-text">
+                    @Model.Description
+                </p>
+                <hr>
+                <p class="card-text">
+                    @Model.Stats
+                </p>
+                <p class="card-text">
+                    @Model.Artist
+                </p>
+                <hr>
+                <p class="card-subtitle">
+                   @Model.News
+                </p>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
